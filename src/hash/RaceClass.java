@@ -37,5 +37,6 @@ public class RaceClass {
         String[] participant = {"aaa", "bbb", "ccc"};
         String[] completion = {"aaa", "bbb"};
         String result = raceArraysSolution(participant, completion);
+        System.out.println("RESULT >>> " + result);
     }
 }
