@@ -11,12 +11,15 @@ public class RaceClass {
                 return participant[i];
             }
         }
-        return participant[completion.length];
+        return "EQUAL";
     }
 
     public static String raceHashSolution(String[] participant, String[] completion) {
         Map<String, Integer> map = new HashMap();
-        for (String player : participant) map.put(player, map.getOrDefault(player, 0) + 1);
+        for (String player : participant) {
+            map.put(player, map.getOrDefault(player, 0) + 1);
+            System.out.println("PLAYER : " + map.get(player));
+        }
         for (String player : completion) map.put(player, map.get(player) - 1);
 
 /*        for (String player : participant) {
