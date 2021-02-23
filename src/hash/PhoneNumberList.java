@@ -3,7 +3,7 @@ package hash;
 import java.util.Arrays;
 
 public class PhoneNumberList {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String[] phoneBook = {"119", "97674223", "1195524421"};
         Boolean result = solution(phoneBook);
         System.out.println("RESULT : " + result);
