@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class Spicy {
     public static void main(String args[]) {
-        int[] scoville = {1, 2, 3, 9, 10, 12,5,4,3,2,1,1};
+        int[] scoville = {1, 2, 3, 9, 10, 12, 5, 4, 3, 2, 1, 1};
         int K = 7;
         int result = solution(scoville, K);
         System.out.println("RESULT : " + result);
@@ -14,7 +14,7 @@ public class Spicy {
     public static int solution(int[] scoville, int K) {
         int answer = 0;
         PriorityQueue<Integer> heap = new PriorityQueue<>();
-        for(int aScoville : scoville) {
+        for (int aScoville : scoville) {
             heap.offer(aScoville);
         }
         while (heap.peek() <= K) {
